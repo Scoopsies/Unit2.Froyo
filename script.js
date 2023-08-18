@@ -1,15 +1,15 @@
 const input = window.prompt("Welcome to cone 'lickin, what ice cream you pickin", "vanilla,vanilla,vanilla,strawberry,coffee,coffee" );
-const arr = input.split(",");
-console.log(arr)
-let obj = {};
+const flavArr = input.split(",");
+console.log(flavArr)
+let flavObj = {};
 
 
-for (let i = 0; i < arr.length; i++){
-    let loop = arr[i];
-    if (obj[loop] === undefined){
-        obj[loop] = 0;
+for (let i = 0; i < flavArr.length; i++){
+    let loopArr = flavArr[i];
+    if (flavObj[loopArr] === undefined){
+        flavObj[loopArr] = 0;
     }
-    obj[loop]++
+    flavObj[loopArr]++
 }
 
-console.log(obj)
+console.log(flavObj)
